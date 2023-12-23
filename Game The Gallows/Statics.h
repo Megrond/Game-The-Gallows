@@ -1,7 +1,6 @@
 #pragma once
 #include "HangmanGame.h"
 
-
 class GameStatistics 
 {
 public:

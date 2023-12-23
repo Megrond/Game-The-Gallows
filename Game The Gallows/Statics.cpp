@@ -8,7 +8,7 @@ void GameStatistics::print(const HangmanGame& game)
     cout << "Искомое слово: " << game.secretWord << endl;
     cout << "Буквы игрока: ";
 
-    for (char letter : game.guessedLetters) 
+    for (char letter : game.guessedLetters)  
     {
         cout << letter << ' ';
     }
