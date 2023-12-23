@@ -3,7 +3,6 @@
 #include <vector>
 #include <ctime>
 #include <cstdlib>
-#include <algorithm>
 #include <Windows.h>
 #include "HangmanGame.h"
 
