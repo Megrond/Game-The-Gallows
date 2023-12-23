@@ -14,7 +14,8 @@ int main()
 {
     setlocale(LC_ALL, "RU");
 
-    try {
+    try 
+    {
         HangmanGame game("wordlist.txt"); 
         HangmanGameEngine manager(game); 
         manager.run(); 

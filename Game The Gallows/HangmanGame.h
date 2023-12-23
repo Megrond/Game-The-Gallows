@@ -4,7 +4,6 @@
 #include <vector>
 #include <ctime>
 #include <cstdlib>
-#include <algorithm>
 #include <Windows.h>
 
 using namespace std;
@@ -25,8 +24,6 @@ private:
     void loadWords(const string& filePath);
     void chooseRandomWord();
     string displayWord() const;
-
-
 
 public:
     HangmanGame(const string& filePath) : attempts(0)
