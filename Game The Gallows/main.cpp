@@ -1,27 +1,28 @@
 ﻿#include <iostream>
+#include <fstream>
+#include <vector>
+#include <ctime>
+#include <cstdlib>
 #include <Windows.h>
+#include "HangmanGame.h"
+#include "Interface.h"
+
 
 using namespace std;
 
-
-//Четвертое задание
-//Создайте консольную версию игры «Виселица».
-//Правила игры можно посмотреть по этой ссылке.
-//Важно:
-//■ Слово выбирается компьютером из списка слов.
-//■ Список слов находится в файле в зашифрованном виде.
-//■ По завершении игры на экран выводится статистика игры :
-//• количество времени;
-//• количество попыток;
-//• искомое слово;
-//• буквы игрока.
-
-
-
-int main()
+int main() 
 {
+    setlocale(LC_ALL, "RU");
 
+    try {
+        HangmanGame game("wordlist.txt"); 
+        HangmanGameEngine manager(game); 
+        manager.run(); 
+    } 
+    catch (const runtime_error& e) 
+    {
+        cout << e.what() << endl; 
+    }
 
-
-	return 0;
+    return 0;
 }
